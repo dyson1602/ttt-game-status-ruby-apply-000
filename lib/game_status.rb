@@ -48,6 +48,10 @@ end
 
 
 def winner(board)
-  board
+  if board[won?(board)[0]] == "X"
+    return "X"
+  else
+    return "O"
+  end
 
 end

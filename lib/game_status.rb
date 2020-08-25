@@ -61,7 +61,3 @@ def winner(board)
     nil
   end
 end
-
-
-
-board[i] detect {|j| j == ("X" || "O")}

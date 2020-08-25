@@ -55,4 +55,5 @@ end
 def winner(board)
   won?(board).each do |i|
     board[i].detect{|j| j == ("X" || "O")}
+  end
 end

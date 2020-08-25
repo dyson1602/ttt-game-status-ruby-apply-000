@@ -48,11 +48,6 @@ end
 
 
 def winner(board)
-  if board[won?(board)].detect{|i| i == "X"}
-    "X"
-  elsif board[won?(board)].detect{|i| i == "O"}
-    "O"
-  else
-    nil
-  end
-end
+  
+  
+  

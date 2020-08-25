@@ -47,11 +47,7 @@ end
 
 
 def over?(board)
-  if (won?(board) != FALSE) || (draw?(board) == TRUE)
-    TRUE
-  else
-    FALSE
-  end
+  (won?(board) != FALSE) || (draw?(board) == TRUE)
 end
 
 

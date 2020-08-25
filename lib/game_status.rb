@@ -53,8 +53,12 @@ end
 
 
 def winner(board)
-  won?(board).each do |i|
-    
+  if board[won?(board)].detect{|i| i == "X"}
+    "X"
+  elsif board[won?(board)].detect{|i| i == "O"}
+    "O"
+  else
+    nil
   end
 end
 

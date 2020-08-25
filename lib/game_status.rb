@@ -48,6 +48,6 @@ end
 
 
 def winner(board)
-  
-  
-  
+  board
+
+end

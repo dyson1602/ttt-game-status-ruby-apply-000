@@ -48,7 +48,7 @@ end
 
 
 def winner(board)
-  if !over?(board) || draw(board)
+  if !over?(board) || draw?(board)
     nil
   elsif board[won?(board)[0]] == "X"
     "X"

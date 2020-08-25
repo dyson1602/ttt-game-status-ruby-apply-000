@@ -35,6 +35,7 @@ def won?(board)
   end
 end
 
+
 def full?(board)
   if board.detect{|i| i == " "} == nil
     TRUE
@@ -42,6 +43,7 @@ def full?(board)
     FALSE
   end
 end
+
 
 def draw?(board)
   if (full?(board) == TRUE) && (won?(board) == FALSE) 
@@ -51,11 +53,17 @@ def draw?(board)
   end
 end
 
+
 def over?(board)
   if (won?(board) != FALSE) || (draw?(board) == TRUE)
     TRUE
   else
     FALSE
   end
+end
+
+
+def winner(board)
+  
 end
 
